@@ -1,0 +1,66 @@
+#book{
+    width:250px;
+    height: 280px;
+    background-color: burlywood;
+    margin-top: 115px;
+    position: fixed;
+    border-radius:10px;
+    right:70px;
+    left:450px;
+}
+#tape{
+    width:115px;
+    height:60px;
+    background-color: darkgray;
+    border-radius: 5px;
+    position: fixed;
+    bottom: 185px;
+    left:600px;
+}
+#metal{
+    width:60px;
+    height:30px;
+    background-color: lightgray;
+    position:fixed;
+    bottom:185px;
+    left:535px;
+    border-radius: 5px;
+}
+
+#triangle-down {
+	width: 0;
+	height: 0;
+	border-left: 170px solid transparent;
+	border-right: 200px solid transparent;
+	border-top: 270px solid navy;
+    position:fixed;
+    bottom:260px;
+    right:500px;
+
+}
+
+#triangle-up {
+	width: 0;
+	height: 0;
+	border-left: 200px solid transparent;
+	border-right: 170px solid transparent;
+	border-top: 270px solid navy;
+    position:fixed;
+    bottom:260px;
+    right:500px;
+
+}
+
+#ruler{
+    width: 20px;
+	  height: 210px;
+    background-color:yellow;
+    bottom: 185px;
+    left:450px;
+    position:fixed;
+    transform:skew(-25deg);
+
+}
+.title {
+    margin-right:20%;
+}
