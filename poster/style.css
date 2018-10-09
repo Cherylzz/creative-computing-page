@@ -1,13 +1,54 @@
-@import url('https://fonts.googleapis.com/css?family=Notable|Poppins');
-<style>
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Cabin+Sketch|Elsie|Fredericka+the+Great|Special+Elite');
 
-@import url('https://fonts.googleapis.com/css?family=Notable');
-</style>
+
 
 * {
     padding: 0;
     margin: 0;
 }
+
+.title{
+    background: #7f9eb2;
+    color:white;
+    width:813px;
+    font-family: 'Elsie', cursive;
+    
+}
+
+
+.box1 { 
+    width:60px;
+    height:1050px;
+    background-color: #bfdce7;
+    left:5px;
+    position:absolute;
+    z-index: -1;
+    transform: rotate(30deg);  
+}
+
+
+.box2 { 
+    width:60px;
+    height:1050px;
+    background-color: #bfdce7;
+    left:5px;
+    position:absolute;
+    z-index: -1;
+    transform: rotate(-30deg);  
+}
+
+/*
+.box3 { 
+    width:60px;
+    height:1050px;
+    background-color: #bfdce7;
+    right:5px;
+    position:absolute;
+    z-index: -1;
+    transform: rotate(30deg);  
+}
+*/
+
 
 html, body{
     width:80%;
@@ -26,26 +67,89 @@ html, body{
     width: 400px;
     height: 500px;
     border: 1px solid;
-    background-color:#906a75;
+    background-color:#D09E88;
     color: #ffffff;
-    font-family: "Notable";
-    font-size: 30px;
+    font-family:'Fredericka the Great', cursive;
+    font-size: 60px;
+    text-shadow: 2px 2px #9baec8;
+    
+    
 }
 
-.item1 h1{
-    left:0;
-    top:0;
-    transform: translate(10%,5%);
+/*
+.item1 p{
+    animation-name: move;
+    animation-duration: 4s;
+    margin-left: 30px;
+    animation-iteration-count: infinite;
 }
+
+@keyframes move{
+    0% {margin-left: 20px;}
+    50% {margin-left: 100px;}
+    100% { margin-left::20px;}
+}
+*/
+
+.item1 p{
+    animation-name: hinge;
+    animation-duration: 6s;
+    margin-left: 250px;
+    animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes hinge {
+  0% {
+    -webkit-transform-origin: top left;
+    transform-origin: top left;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+  }
+
+  20%,
+  60% {
+    -webkit-transform: rotate3d(0, 0, 1, 80deg);
+    transform: rotate3d(0, 0, 1, 80deg);
+    -webkit-transform-origin: top left;
+    transform-origin: top left;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+  }
+
+  40%,
+  80% {
+    -webkit-transform: rotate3d(0, 0, 1, 60deg);
+    transform: rotate3d(0, 0, 1, 60deg);
+    -webkit-transform-origin: top left;
+    transform-origin: top left;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    opacity: 1;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 700px, 0);
+    transform: translate3d(0, 700px, 0);
+    opacity: 0;
+  }
+}
+
 .item2{
     width: 400px;
     height: 500px;
     border: 1px solid;
-    background-color: #CFC0BD;
+    background-color: #9baec8;
     color:#ffffff;
-    font-family:"Poppins";
-    font-size: 15px;
+    font-family:'Special Elite', cursive;
+    font-size: 20px;
+    transition-duration: 1s;
 }
+
+.item2:hover {
+    transform: scale(1.1);
+}
+
+
 
 .item2 p{
     width:80%;
@@ -53,15 +157,26 @@ html, body{
     left:0;
     top:0;
     transform: translate(12%,60%);
-
+    margin-top: 200px;
+    
 }
+
 .item3{
     width: 400px;
     height: 500px;
     border: 1px solid;
-    background-color: #DDD5D0;
+    background-color: #6E7783;
     color:#ffffff;
-    font-family: "Poppins";
+    font-family: 'Special Elite', cursive;
+    
+    transition-duration: 1s;
+    font-size: 20px;
+
+}
+
+
+.item3:hover {
+     transform: scale(1.2);
 }
 
 .item3 p{
@@ -69,8 +184,13 @@ html, body{
     text-align: left;
     left:0;
     top:0;
-    transform: translate(12%,200%);
+/*    transform: translate(12%,200%);*/
+    margin-top:200px;
+    margin-left:30px;
+    
+
 }
+
 
 .item4{
     width: 400px;
@@ -78,8 +198,12 @@ html, body{
     border: 1px solid;
     background-color: #B8B8AA;
     color:#ffffff;
-    font-family: "Poppins";
-    font-size: 22px;
+    font-family: 'Special Elite', cursive;
+    font-size: 20px;
+    
+    transition-duration: 1s;
+
+    
 }
 
 .item4 p{
@@ -88,4 +212,30 @@ html, body{
     left:0;
     top:0;
     transform: translate(18%,100%);
+    margin-top: 170px;
 }
+.item4:hover {
+    transform: scale(1.5)
+}
+
+.item4:hover{
+    -ms-transform: rotate(-20deg); /* IE 9 */
+    -webkit-transform: rotate(-20deg); /* Safari */
+    transform: rotate(-15deg);
+}
+
+.item4:hover {
+  -webkit-mask-image: linear-gradient(-75deg, rgba(0,0,0,.6) 30%, #000 50%, rgba(0,0,0,.6) 70%);
+  -webkit-mask-size: 200%;
+  animation: shine 2s infinite;
+}
+
+@-webkit-keyframes shine {
+  from {
+    -webkit-mask-position: 150%;
+  }
+
+  to {
+    -webkit-mask-position: -50%;
+  }
+    

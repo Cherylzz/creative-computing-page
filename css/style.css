@@ -1,4 +1,30 @@
+@import url('https://fonts.googleapis.com/css?family=Megrim|Raleway+Dots|Special+Elite');
+
 @import url('https://fonts.googleapis.com/css?family=Montserrat|Nanum+Pen+Script');
+
+
+.box1 { 
+    width:30px;
+    height:250px;
+    background-color: #d6ecfa;
+    left:300px;
+    top:80px;
+    position:absolute;
+    z-index: -1;
+    transform: rotate(30deg);  
+}
+
+.box2 { 
+    width:60px;
+    height:60px;
+    background-color: #d6ecfa;
+    left:1000px;
+    top:400px;
+    position:absolute;
+    z-index: -1;
+    transform: rotate(20deg);  
+}
+
 
 body,html{
     height:100%;
@@ -8,11 +34,33 @@ body,html{
 #title{
     color:white;
     text-align: center;
-    background-color: #ce9999;
-    font-family: 'Nanum Pen Script', cursive;
+/*    background-color: #ce9999;*/
+    font-family: 'Raleway Dots', cursive;
     height:70px;
     margin-bottom: 20px;
     font-size:35px;
+    color: white;
+    text-shadow: 1px 1px 2px #ce9999, 0 0 25px #fab1ce, 0 0 5px #CBA6C3;
+}
+
+#title{
+    animation-name: flash;
+    animation-duration: 4s;
+    margin-left: 30px;
+    animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes flash {
+  from,
+  50%,
+  to {
+    opacity: 1;
+  }
+
+  25%,
+  75% {
+    opacity: 0;
+  }
 }
 
 #image{
@@ -26,18 +74,19 @@ body,html{
 
 .content{
     width:50%;
-    margin-left:25%; 
+    margin-left:25%;
 }
 .content h2{
     font-family: 'Nanum Pen Script', cursive;
     font-size:25px;
-} 
+}
 
 .content p{
     font-family: "Montserrat";
     margin-top: -15px;
     text-align: justify;
 }
+/*
 .footer{
     background-color:#ce9999;
     height:20px;
@@ -45,11 +94,29 @@ body,html{
     color:#ffffff;
     text-align:center;
     padding:15px;
-   
-    
     margin-top: 3%;
 }
 
+.footer{
+    animation-name: flash;
+    animation-duration: 4s;
+    margin-left: 30px;
+    animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes flash {
+  from,
+  50%,
+  to {
+    opacity: 1;
+  }
+
+  25%,
+  75% {
+    opacity: 0;
+  }
+    
+*/
 .projects ul{
     text-align:center;
     list-style: none;
@@ -58,11 +125,15 @@ body,html{
 
 .projects ul a{
     text-decoration: none;
-    font-family:  'Nanum Pen Script', cursive;
+    font-family:  'Raleway Dots', cursive;
     font-size:25px;
-    color: black;
+    color: #CBA6C3;
 }
 
 .projects ul a:hover{
-    color: #ce9999;
+    color: white;
+    text-shadow: 1px 1px 2px #8EC0E4, 0 0 25px #6AAFE6, 0 0 5px #CBA6C3;
 }
+}
+
+

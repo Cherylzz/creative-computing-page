@@ -1,0 +1,10 @@
+.item2{
+    color:white;
+    background-color: #E27D60;    
+    div.test:hover {
+    text-overflow: inherit;
+    overflow: visible;
+    font-size:90px;
+}
+
+   
