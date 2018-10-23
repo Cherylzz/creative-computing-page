@@ -4,114 +4,220 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style type="text/css">
+    
+    .circle{
+           width: 20px;
+           height: 20px;
+           border: 1px solid #000;
+           position: absolute;
+           border-radius: 15px;
+        }
+    </style>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
+  
    <div>
        <h1>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;POEM</h1>
+<!--
    </div>
-   
-       <div class="myDog">
+   <div class="content">
+    <p id="line1">My God, Tomorrow's ride...</p>
+    <p id="line2">Well, here we are, right now.</p>
+    <p id="line3">You stare at me and wag your tail.</p>
+  </div>
+-->
+    
+  <div class = "dog" onclick="myFunction"></div>
+    <div class="dog">
            <pre>
-                        \\          //       
-                        / !        /! \      
-                       /' \\      //   \    
-                      /   //|    |\\   ｜     
-                      \\  \\|____|//   \   
-                      /                 \    
-                     !   - -     - -    !    
-                      \ /( 0 )   ( 0 )\ /  
-                     /       __!__       \  
-                    /       /--!--\      \ 
-                    ｜     /  (@)   \    ｜  
-                      \      \_|_/      ／   
-                       /               \      
-                       \  \  \  /   /  /   
-                         \  \ \ / /  /     
-                             \   /             
-           </pre> 
-       </div>
-    <div class="myBone">
-        <pre>
        /----\                                 /----\
        \_    ---------------------------------    _/
          》            A DOG'S LIFE              《  
        /     _________________________________     \ 
+       \____/          DANIEL GROVES          \____/
+       
+                     ^                     z    
+                    Y YY                /''/    
+                   Y | YY            /''  %     
+                  J /\\ YY         /'    '     
+                 'y//\\ HH         HH    H   
+                 ((\\\\/ HH        HHL   K     
+                 ( \\\/  %         HHI   KL  
+                 (        '''''''''       )) 
+                  I~```` \         /'''''\\     
+                 //    _ `\`      / / ---\`,`          
+                 /  / (0) ' '     ||  (0)  \                
+                '/'                        L      
+                  H         _  M  _       H       
+                  H   /       _M_       \ H          
+                 K  /         _N  _        K          
+                 K          _  I_          K        
+                \             \-/          /  
+                  \            |          /                                                                      ____    
+                    ` /  /  __/ \__` \ \ `                                                                      /    \
+                  % \ `  `            ` `/                                                                     |      |    \       ____      
+                  T   \  \            /  /                                                                      \____/            /    \
+                 /        \  \  /  /    M                                                                                        |      |
+                 %             #        M                                                          ____   /                       \____/
+                %                        M                 ____                                   /    \                                    
+               %                         M                /    \     \                           |      |
+              %                          M               |      |        ____                     \____/                                \       ____
+        _    %               ---         M                \____/    \   /    \              /                                                  /    \
+ ( (   | | ))F     H       H     H       L         /  /                |      |                /                                              |      |
+       \ \__ F     H       H     H       L       ____                   \____/         ____                                                    \____/ 
+        \___ F     H       H     H       L      /    \                            \   /    \
+             F     H       H     H       L   ( |      |                              |      |
+              \___(_________)   L_________)     \____/   ))                       ((  \____/  ))       
+                           
+     <div class="poem">
+       /----\                                 /----\
+       \_    ---------------------------------    _/
+         》     My God, tomorrow’s ride . . .    《  
+       /     _________________________________     \ 
        \____/                                 \____/
-        </pre>
+       
+       /----\                                 /----\
+       \_    ---------------------------------    _/
+         》    Well, here we are, right now.     《  
+       /     _________________________________     \ 
+       \____/                                 \____/
+       
+       /----\                                 /----\
+       \_    ---------------------------------    _/
+         》  You stare at me and wag your tail.  《  
+       /     _________________________________     \ 
+       \____/                                 \____/
+           
     </div>
- 
-  </div> 
-    <div class="poem">
-<p>
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;(DANIEL GROVES)<br>
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;My God, tomorrow’s ride . . . <br>
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Well, here we are,right now.<br>
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;You stare at me and wag your tail.</p>
-</div>
-      
+        </pre>
+
     
-   <script>
-//    var myTrain = ["  _____    ___     ___     ___    _  _   "," |_   _|  | _ \   /   \   |_ _|  | \| |  ","   | |    |   /   | - |    | |   | .` |  ","  _|_|_   |_|_\   |_|_|   |___|  |_|\_|  ","_|.....|_|.....|_|.....|_|.....|_|.....|_","---0-0-----0-0-----0-0-----0-0-----0-0--- "]
-    
-//    console.log("  _____    ___     ___     ___    _  _   ")
-//    console.log(" |_   _|  | _ \   /   \   |_ _|  | \| |  ")
-//    console.log("   | |    |   /   | - |    | |   | .` |  ")
-//    console.log("  _|_|_   |_|_\   |_|_|   |___|  |_|\_|  ")
-//    console.log("_|.....|_|.....|_|.....|_|.....|_|.....|_")
-//    console.log("---0-0-----0-0-----0-0-----0-0-----0-0--- ")
-    
-//    console.log(myTrain);
-//    for(var i = 0; i<myTrain.length; i++){
-//        console.log(myTrain[i]);
-//    }
-    </script>
-    
-    
+<!--
     <script>
         
-     var myDog = ["      \\\\        //       ",
-                  "      / !\\     /! \\      ",
-                  "     /' \\\\     // `\\    ",
-                  "    /   // !   ! \\ ｜     ",
-                  "    \\   \\!___! //   \\   ",
-                  "    /                \\    ",
-                  "   !   - -     - -    !    ",
-                  "   \\ /( 0 )   ( 0 )\\  /  ",
-                  "   /      __!__       \\   ",
-                  "  /      /--!--\\       \\ ",
-                  " ｜    /   (@)   \\     ｜  ",
-                  "  \\_      >_!_<      _／   ",
-                  "    /               \\      ",
-                  "     \\ \\  \\  /   / /     ",
-                  "        \\  \\ /   /        ",
-                  "           \\  /            "] 
-     
-//     console.log("      \\\\        //       ")
-//     console.log("      / !\\     /! \\      ")
-//     console.log("     /' \\\\     // `\\    ") 
-//     console.log("    /   // !   ! \\ ｜     ")  
-//     console.log("    \\   \\!___! //   \\   ")   
-//     console.log("    /                \\    ")  
-//     console.log("   !   - -     - -    !    ")    
-//     console.log("   \\ /( 0 )   ( 0 )\\  /  ")   
-//     console.log("   /      __!__       \\   ")
-//     console.log("  /      /--!--\\       \\ ") 
-//     console.log(" ｜    /   (@)   \\     ｜  ")   
-//     console.log("  \\_      \\_!_／      _／   ")  
-//     console.log("    /               \\     ")
-//     console.log("     \\ \\  \\  /   / /     ")   
-//     console.log("        \\  \\ /   /          ")  
-//     console.log("           \\  /            ")
-////     console.log  
-//     console.log
-        
-        
-         for(var i = 0; i<myDog.length; i++){
-        console.log(myDog[i]);
+    function myFunction () {
+    document.getElementById(line1).innerHTML=" My God, Tomorrow's ride...";  
+    document.getElementById(line2).innerHTML=" Well, here we are, right now.";
+    document.getElementById(line3).innerHTML=" You stare at me and wag your tail.";
+    
+    var poem = ["My God, Tomorrow's ride...",
+                "Well, here we are, right now.",
+                "You stare at me and wag your tail"
+    ]
+    
+    var Dog = ["      ^                     z ",   
+               "     Y YY                /''/ ",   
+               "    Y | YY            /''  %  ",   
+               "   J /\\ YY         /'    '   ",  
+               "  'y//\\ HH         HH    H   ",
+               "  ((\\\\/ HH        HHL   K   ",  
+               "  ( \\\/  %         HHI   KL  ",
+               "  (        '''''''''       )) ",
+               "  I~```` \         /'''''\\   ",  
+               "  //    _ `\`      / / ---\`,`",          
+               "  /  / (0) ' '     ||  (0)  \ ",               
+               " '/'                        L ",     
+               "   H         _  M  _       H  ",     
+               "   H   /       _M_       \ H   ",       
+               "  K  /         _N  _        K  ",        
+               "  K          _  I_          K  ",      
+               " \             \-/          /  ",
+               "   \            |          /   ",
+               "     ` /  /  __/ \__` \ \ `    ",
+               "   % \ `  `            ` `/    ",
+               "   T   \  \            /  /    ",
+             "    /        \  \  /  /    M     ",
+            "     %             #        M     ",
+           "    %                        M     ",
+          "    %                         M     ",
+         "    %                          M     ",
+        "    %               ---         M     ",
+        "    F     H       H     H       L     ",
+        "    F     H       H     H       L     ",
+        "    F     H       H     H       L     ",
+        "    F     H       H     H       L     ",
+         "    \___(_________)   L_________)    "  ]             
+    
+   for(var i = 0; i<poem.length; i++){
+        console.log(poem[i]);   
+   }
+                                                                               
+   for(var i = 0; i<dog.length; i++){
+        console.log(dog[i]);  
+   }
     }
     </script>
+ 
+-->
+
+
+    
+<script>
+//     var myDog = ["      \\\\        //       ",
+//                  "      / !\\     /! \\      ",
+//                  "     /' \\\\     // `\\    ",
+//                  "    /   // !   ! \\ ｜     ",
+//                  "    \\   \\!___! //   \\   ",
+//                  "    /                \\    ",
+//                  "   !   - -      - -   !    ",
+//                  "   \\ /( 0 )   ( 0 )\\ /  ",
+//                  "   /      __!__       \\   ",
+//                  "  /      /--!--\\       \\ ",
+//                  " ｜    /   (@)   \\     ｜  ",
+//                  "  \\_      >_!_<      _／   ",
+//                  "    /               \\      ",
+//                  "     \\ \\  \\  /   / /     ",
+//                  "        \\  \\ /   /        ",
+//                  "           \\  /            "] 
+//     
+
+
+        
+        
     
 
+     
+
+//       
+//     var clicks = 0;
+//           
+//           var myDiv = $("#random");
+//           
+//           myDiv.append("<h1>A DOG'S LIFE")                 
+//           myDiv.css({"color" : "red"});
+//           myDiv.click(function(){
+//               myDiv.append(clicks + " times");
+//               clicks = clicks + 1 
+////             console.log("A DOG'S LIFE")  
+//           });
+           
+    
+   
+    
+
+
+    
+//var myBone = [
+//    
+//    "/----\                                 /----\",
+//    "\_    ---------------------------------    _/",
+//    "  》                                      《  ",
+//    "/     _________________________________     \ ",
+//    "\____/                                 \____/",
+//
+//]
+//    
+   
+        
+        
+
+              
+
+    </script>
+    
 <!--
   
 <p>DANIEL GROVES<br>
@@ -120,23 +226,6 @@ Well, here we are,right now.<br>
 You stare at me and wag your tail.</p>
 -->
     
-    <script>
-var myBone = [
-    
-    "/----\                                 /----\",
-    "\_    ---------------------------------    _/",
-    "  》                                      《  ",
-    "/     _________________________________     \ ",
-    "\____/                                 \____/",
-
-]
-    
-   
-   for(var i = 0; i<myBone.length; i++){
-        console.log(myBone[i]);
-    </script>
-    
-
  
 </body>
 </html>

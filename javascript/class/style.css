@@ -1,0 +1,11 @@
+/*
+color:blue;
+transform: translate(0);
+animation:slidein 3s linear 1s infinite alternate;
+}
+
+
+@keyframes slidein {
+    from { transform: translate(0px);}
+    to   { transform: translate(100px);}
+}*/

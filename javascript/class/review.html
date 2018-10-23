@@ -1,0 +1,90 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <style>
+        background-color: black;
+        }
+        .dot{
+            background-color: black;
+            height: 10px; width: 10px;
+            position: absolute;
+            filter: blur(50px);
+        }
+    </style>
+</head>
+    
+<body style="width: 100vw; height: 100vh">
+<!--
+    <section id="text">Hello World</section>
+    <section id="clicks">0</section>
+--><div
+    <script>
+        
+        
+
+        $("document").ready(function(){
+//            var second = 0;
+            var date = new Date().getSeconds()
+            console.log(date)
+            
+            SetInterval( function(){
+                console.log(date);
+                date = date + 1
+            }, 1000);
+           
+        })
+        
+        
+    setInterval( function() {
+            var color = 0;
+            var seconds = new Date().getSeconds();
+            var sdegree = seconds * 6;
+            var srotate = "rotate(" + sdegree + "deg)";
+            if(color < 255){
+              color = seconds;
+            } else {
+              color = 0;
+            }
+            $("#sec").css({ "transform": srotate });
+            $("body").css({ "background-color": "rgba("+color+","+color+","+color+", 1)" 
+      });
+    }, 1000 );
+
+//      $("document").ready(function(){
+//        //once the document has loaded
+//        //our code
+//        var textElement = $("#text");
+//        var clickCounter = $("#clicks")
+//        var clicks = 0;
+//        
+//    
+//        $("body").mousemove(function(event){
+////            console.log(event.offsetX)
+////            console.log(event.offsetY)
+//            $("body").append(
+//                "<div class='dot style='transform: translate(" + ()
+//            "div style")
+//        })
+//        textElement.mouseenter(function() {
+//            //This replaces the content of #text
+//            textElement.html("mouse entered!");
+//            textElement.css({"background-color": "red", "color" : "white"
+//            });
+//            
+//            textElement.mouseleave(function() {
+//            textElement.html("mouse left");
+//            });
+//                
+//            textElement.click(function() { 
+//            clicks = clicks + 1
+//            clickCounter.html(clicks);
+//            clickCounter.css({"transform" : "translateY(" + clicks*10 +"px)"});
+//                                         
+//            });
+//        })
+//      })
+    </script>
+</body>
+</html>
