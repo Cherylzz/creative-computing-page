@@ -4,53 +4,103 @@
     <title>Document</title>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <style>
-        background-color: black;
-        }
+        
+/*
         .dot{
             background-color: black;
             height: 10px; width: 10px;
             position: absolute;
             filter: blur(50px);
         }
+*/
+*/
     </style>
 </head>
+<style>
+
+    #sec5{
+        width:200px;
+        height:200px;
+        background-color: black;
+}
+
+    #min5{
+        width:200px;
+        height:150px;
+        background-color: antiquewhite;
+    }
+
+    #hr5{
+        width:100px;
+        height:100px;
+        background-color: aquamarine;
+    }
+
+
+</style>
     
-<body style="width: 100vw; height: 100vh">
+<div class = "clock-4">
+    <div id="sec5"></div>
+    <div id="min5"></div>
+    <div id="hr5"></div>
+</div>
+
+
 <!--
     <section id="text">Hello World</section>
     <section id="clicks">0</section>
---><div
+-->
+<!--
+   <div id="square2" style="width:200px; height: 200px; background-color:blue;"></div>
+   
+   <div id="text2" style="color:red; height:200; font-size:120px">
+    0   
+-->
+   </div>
     <script>
         
         
 
-        $("document").ready(function(){
-//            var second = 0;
-            var date = new Date().getSeconds()
-            console.log(date)
-            
-            SetInterval( function(){
-                console.log(date);
-                date = date + 1
-            }, 1000);
-           
-        })
+//        $("document").ready(function(){
+////            var second = 0;
+//            var date = new Date().getSeconds()
+//            console.log(date)
+//            
+//            setInterval( function(){
+//                console.log(date);
+//                date = date + 1
+//            }, 1000);
+//           
+//        })
+//        
+    
+
         
+    let tick =setInterval(clock,1000);
+    function clock(){
+        let date5=new Date()
+        let s = date5.getSeconds();
+        let m = date5.getMinutes();
+        let h = date5.getHours();
         
-    setInterval( function() {
-            var color = 0;
-            var seconds = new Date().getSeconds();
-            var sdegree = seconds * 6;
-            var srotate = "rotate(" + sdegree + "deg)";
-            if(color < 255){
-              color = seconds;
-            } else {
-              color = 0;
-            }
-            $("#sec").css({ "transform": srotate });
-            $("body").css({ "background-color": "rgba("+color+","+color+","+color+", 1)" 
-      });
-    }, 1000 );
+        let second = 360*(s/60);
+        let minute = 360*(m/60);
+        let hour = 360*(h/36);
+        
+        $("#sec5").css({"transform": "rotate("+second+"deg)"})
+        $("#min5").css({"transform": "rotate("+minute+"deg)"})
+        $("#hr5").css({"transform": "rotate("+hour+"deg)"})
+    }
+    
+//    setInterval( function() {
+//            var color = 0;
+//            var seconds = new Date().getSeconds();
+//            var sdegree = seconds * 6;
+//            var srotate = "rotate(" + sdegree + "deg)";
+//            $("#sqsec").css({ "transform": srotate });
+//            $("#text2").html(seconds);
+//    }, 1000 );
+   
 
 //      $("document").ready(function(){
 //        //once the document has loaded

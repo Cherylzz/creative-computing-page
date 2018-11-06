@@ -1,0 +1,335 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
+    <style>
+@import url('https://fonts.googleapis.com/css?family=Special+Elite');
+    
+@import url('https://fonts.googleapis.com/css?family=Alex+Brush|Nunito');
+</style>
+
+<style>
+    body{
+        background-color:white;
+    }
+    
+    #sec{
+            position:absolute;
+            width:370px; 
+            height:370px; 
+            background-color:#D4DFE6;
+            margin-top: 300px;
+        
+            margin-left:50%;
+            margin-right:50%;
+            border-radius:400px;
+            
+        }
+    #tick{
+            position:absolute;
+            width:370px; 
+            height:370px;
+            background-color:#577399;
+        
+            margin-top: 300px;
+            margin-left:50%;
+            margin-right:50%;
+        
+            transition-duration: 0.5s;
+            border-radius:400px;
+    }
+    
+/*
+    #square{
+            position:absolute;
+            width:100px;
+            height:100px;
+            background-color:#E0E3DA;
+        
+            margin-top: 300px;
+            margin-left:50%;
+            margin-right:50%;
+*/
+            
+    }
+    .clock-2{
+        text-align: center;
+    }
+    
+    #circle{
+        position:absolute;
+        width:370px; 
+        height:370px;
+        border-radius: 400px;
+        background-color: #CFAA9E;
+        
+        margin-left:13%;
+        margin-right:45%;
+        margin-top:5%;
+
+        
+    }
+    
+    #sec2{
+        position:absolute;
+        background-color: #DE7E73;
+        transform-origin: right;
+        margin-top:140px;
+        width: 178px;
+        height: 6px;
+        border-radius:20px;
+        
+        margin-top:20%;
+        margin-left:13.2%;
+        margin-right:40.5%;
+       
+    }
+    
+    #min2{
+        position:absolute;
+        background-color: #ED9282;
+        transform-origin:right;
+        width:167px;
+        height:5px;
+        border-radius:20px;
+       
+        margin-top:20%;
+        margin-left:14.4%;
+        margin-right:40.5%;
+       
+    }
+    
+    #hour2{
+        position:absolute;
+        background-color: #F7AA97;
+        transform-origin:right;
+        width:130px;
+        height:8px;
+        border-radius:20px;
+        
+        margin-top:19.5%;
+        margin-left:16.5%;
+        margin-right:40.5%;
+    }
+    
+  
+    #text{
+        position:absolute;
+        color: white;
+        font-size:90px;
+        font-family: 'Nunito';
+        
+        margin-top:7%;
+        margin-left:50%;
+        text-shadow: 1px 1px 2px #D4DFE6, 0 0 25px #577399, 0 0 5px #ED9282;
+        
+/*
+          animation-name: flash;
+    animation-duration: 4s;
+    margin-left: 30px;
+    animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes flash {
+  from,
+  50%,
+  to {
+    opacity: 1;
+  }
+
+  25%,
+  75% {
+    opacity: 0;
+  }
+}
+*/
+        
+    }
+    
+    #color-clock{
+        position:absolute;
+        background-color: black;
+        height:300px;
+        width: 300px;
+        
+        margin-top:65%;
+        margin-left:50%;
+        margin-right:45%;
+        border-radius: 30px;
+    }
+    
+    #text2{
+        font-size: 60px;
+        text-shadow: 3px 2px red;
+        
+    }
+    
+ 
+    #sec5{
+        position:absolute;
+        width:300px;
+        height:300px;
+        background-color: #C5E99B;
+        margin-left:15%;
+        margin-top:50%;
+        border-radius: 20px;
+
+}
+
+    #min5{
+        position:absolute;
+        width:200px;
+        height:200px;
+        background-color: #8FBC94;
+        margin-left:19%;
+        margin-top:54%;
+        border-radius: 20px;
+    }
+
+    #hr5{
+        position:absolute;
+        width:100px;
+        height:100px;
+        background-color: #548687;
+        margin-left:23%;
+        margin-top:58%;
+        border-radius: 20px;
+    }
+
+</style>
+</head>
+<body>
+  
+   <div class = "clock-1">
+        <div id="sec" ></div>
+        <div id="tick"></div>
+        <div id="square"></div>
+   </div>
+
+    <div class = "clock-2">
+        <div id="circle"></div>
+        <div id="sec2"></div>
+        <div id="min2"></div>
+        <div id="hour2"></div>
+       
+    </div>
+    
+    <div class = "clock-3">
+        <div id = "text"></div>
+    </div> 
+    
+    <div class = clock-4>
+        <div id = "color-clock"></div>
+        
+    </div>   
+    
+    <div class = "clock5">
+        <div id="text2"></div>
+        <div id="sec5"></div>
+        <div id="min5"></div>
+        <div id="hr5"></div>
+    </div>
+<script>
+    //======global variables
+    
+    
+    
+    //======clock 1=========
+    let tick = setInterval(clock1, 1000 );
+    function clock1(){
+        let date1 = new Date()
+        let seconds= date1.getSeconds();
+        let sdegree = seconds * 6;
+        let srotate = "rotate(" + sdegree + "deg)";
+
+        let change = seconds/60;
+
+        $("#tick").css({ "transform": srotate });
+        $("#tick").css({"transform": "scale("+change+")"});
+    }
+    
+    //========clock 2=========
+    let tick2 = setInterval(clock2, 1000 );
+    function clock2(){
+        let date2 = new Date()
+        let s = date2.getSeconds();
+        let m = date2.getMinutes();
+        let h = date2.getHours();
+//        console.log("the minutes is "+ m);
+        
+        let second = 360*(s/60);
+        let minute = 360*(m/60);
+        let hour = 360*(h/36);
+//        console.log("the degree of seconds is "+ second)
+//        console.log("the degree of minutes is "+ minute)
+//        console.log("the degree of hours is "+ hour)
+//        
+        $("#sec2").css({"transform": "rotate("+second+"deg)"})
+        $("#min2").css({"transform": "rotate("+minute+"deg)"})
+        $("#hour2").css({"transform": "rotate("+hour+"deg)"})
+    }
+    
+    //clock3
+    let tick3 = setInterval(clock3, 1000);
+    function clock3(){
+        let date3 = new Date()
+        let text = date3.toLocaleTimeString();
+        //console.log(text);
+        
+        $("#text").html(text);
+
+    }
+    
+    //clock4
+    let tick4 = setInterval(clock4, 1000);
+    function clock4(){
+        let date4 = new Date()
+        let s4 = date4.getSeconds();
+        
+        console.log(s4);
+        let color = (255/60)*s4;
+ 
+        console.log(color);
+        
+        $("#color-clock").css({"background-color": "rgba("+color+","+color+","+color+", 1)"})  
+
+    }
+//clock5
+//    let tick5 = setInterval(clock5, 1000);
+//    function clock5(){
+//        let date5 = new Date()
+//        let text = date5.toLocaleTimeString();
+//        //console.log(text);
+//        
+//        $("#text2").html(text);
+//        var srotate = "rotate(" + sdegree + "deg)";
+//        $("#text2").css({ "transform": srotate });
+
+        
+ let tick5 =setInterval(clock5,1000);
+    function clock5(){
+        let date5=new Date()
+        let sec = date5.getSeconds();
+        let min = date5.getMinutes();
+        let hr = date5.getHours();
+        
+        let second = 360*(sec/60);
+        let minute = 360*(min/60);
+        let hour = 360*(hr/36);
+        
+        $("#sec5").css({"transform": "rotate("+second+"deg)"})
+        $("#min5").css({"transform": "rotate("+minute+"deg)"})
+        $("#hr5").css({"transform": "rotate("+hour+"deg)"})
+    }
+    
+    
+
+
+    
+   
+   </script>
+</body>
+    
+</html>
