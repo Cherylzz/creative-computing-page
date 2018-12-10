@@ -2,11 +2,45 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
-    <script src="https"
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+   
 </head>
 <body>
+  <form id="form">
+   <input id="input1" type="text" name="hello-field" value="" placeholder="Say hello"> 
+   <input type="submit" name="" value="go">
+   </form> 
+   
+   <div id="inputs">
+       <div id="temp"></div>
+   </div>
+   
+    <script type="text/javascript">
+        var city = "New York"
+        
+       function getData(city){
+        $.ajax({
+            url: "http://api.openweathermap.org/data/2.5/weather?q=New York&units=imperial&appid=ef3e268cbe387a39c451c064de7ff0c1",
+            success: function (data) {
+               $("#temp").html(data.main.temp)
+            }
+        });
+       }
+  
+    $("#form").submit(function(event){
+        city = $("#input1").val()
+        getData(city)
+        event.preventDefault
+        }
+    });
+}
+        
+        getData(city){
+            
+        }
+        
+ 
     
-    
-    
+    </script>
 </body>
 </html>

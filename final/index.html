@@ -1,0 +1,162 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>This place is a zoo!</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js">
+    </script>
+    
+    <div class = "title">
+        <h1>ZOO Per Place</h1>
+   </div>
+   
+</head>
+<script>
+function randomImage(){
+  var images = ['images/Background-beijing.PNG',
+                'images/Background-desert.png',
+                'images/BackgroundStretched.PNG']
+      
+  var size = images.length;
+  var x = Math.floor(size * Math.random());
+    
+    console.log(x);
+  
+  var element = document.getElementsByClassName('background');
+  
+  console.log(element);
+  element[0].style["background-image"] = "url("+ images[x] + ")";
+}
+    
+document.addEventListener("DOMContentLoaded", randomImage);
+    
+</script>
+
+<audio id="myAudio1">
+<source src="sounds/ZootopiaSloth.mp3" type="audio/mp3">
+</audio>
+ <audio id="myAudio2">
+  <source src="sounds/wombat.mp3" type="audio/mp3">
+</audio>
+ <audio id="myAudio3">
+  <source src="sounds/alligator3.mp3" type="audio/mp3">
+</audio>
+<!--
+<audio id="myAudio4">
+  <source src="sounds/alligator3.mp3" type="audio/mp3">
+</audio>
+-->
+<audio id="myAudio5">
+  <source src="sounds/tiger.mp3" type="audio/mp3">
+</audio>
+  
+  
+  
+ <button onclick="playAudio()" type="button">Play Audio</button>
+<button onclick="pauseAudio()" type="button">Pause Audio</button> 
+
+<script>
+var x = document.getElementById("myAudio1"); 
+var y = document.getElementById("myAudio2"); 
+var z = document.getElementById("myAudio3"); 
+var i = document.getElementById("myAudio4"); 
+var a = document.getElementById("myAudio5"); 
+var b = document.getElementById("myAudio6"); 
+
+
+
+function playAudio1() { 
+    x.play(); 
+} 
+function playAudio2() { 
+    y.play(); 
+} 
+function playAudio3() { 
+    z.play(); 
+} 
+function playAudio4() { 
+    i.play(); 
+}
+function playAudio5() { 
+    a.play(); 
+}
+function playAudio6() { 
+    b.play(); 
+}
+function pauseAudio() { 
+    x.pause(); 
+    y.pause();
+    z.pauce();
+    i.pauce();
+    a.pauce();
+    b.pauce();
+} 
+</script>
+
+ 
+  
+  
+<div class="background"></div>
+
+<div onclick="playAudio1()"  id = "container">
+    <div id="sloth">
+    <img src="images/sloth.PNG"alt="SlothImg">
+    </div>
+    
+<div onclick="playAudio2()" id="wombat">
+    <img src="images/wombat.PNG"alt="WombatImg">
+    </div>
+    
+<div onclick="playAudio3()" id="bird">
+    <img src="images/bird.PNG"alt="BirdImg">
+    </div>
+    
+<div onclick="playAudio4()" id="chameleon">
+    <img src="images/chameleon.PNG"alt="ChameleonImg">
+</div>
+
+<div onclick="playAudio5()" id="tiger">
+    <img src="images/tiger.PNG"alt="TigerImg">
+</div>
+
+<div onclick="playAudio6()" id="giraffe">
+    <img src="images/giraffe.PNG"alt="GiraffeImg">
+</div>
+
+
+</div>
+    
+<script>
+    
+      $( function() {
+        $( "#sloth" ).draggable();
+    } );
+    
+        $( function() {
+        $( "#wombat" ).draggable();
+    } );
+    
+         $( function() {
+        $( "#bird" ).draggable();
+    } );
+    
+         $( function() {
+        $( "#chameleon" ).draggable();
+    } );
+    
+         $( function() {
+        $( "#tiger" ).draggable();
+    } );
+    
+         $( function() {
+        $( "#giraffe" ).draggable();
+    } );
+    
+   
+</script>
+
+<body>
+</body>
+</html>
+
