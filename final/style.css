@@ -1,39 +1,30 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Cabin+Sketch|Elsie|Fredericka+the+Great|Special+Elite');
+
+/*
 url("https://unsplash.imgix.net/photo-1428278953961-a8bc45e05f72?fit=crop&amp;fm=jpg&amp;h=500&amp;q=75&amp;w=1050");
 
-@import url('https://fonts.googleapis.com/css?family=Megrim|Raleway+Dots|Special+Elite');
-
-@import url('https://fonts.googleapis.com/css?family=Montserrat|Nanum+Pen+Script');
-
+*/
 
 
 
 body {
-/*    background-color:#8FBC94;*/
-}
-/*
-.grid-container {
-  display: grid;
-  grid-column-gap: 50px;
-  grid-template-columns: auto auto auto;
-  background-color: #8FBC94;
-  padding: 10px;
 }
 
-.grid-item {
-  background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid #8FBC94;
-  padding: 20px;
-  font-size: 30px;
-  text-align: center;
+.title {
+    font-size: 50px;
+    margin-left: 20%;
+    position: absolute;
+    margin-bottom: 20%;
+    color: white;
+    font-family:'Fredericka the Great', cursive;
+    text-shadow: 6px 2px black;
 }
 
-*/
+
 .background {
     background-image: url("images/BackgroundStretched.png");
-/*    background-size:40%;*/
-/*    width: 50%;*/
     height: 100%;
     background-size: cover;
     background-position: center;
@@ -41,29 +32,67 @@ body {
 }
 
 img{
-    width: 80%;
+/*    position:absolute;*/
+    width: 20%;
+    margin-left: 300px;
+    top:500px;
 }
 
-/*
-SlothImg{
-    width:50%;
-}
-*/
+.title:hover{
 
-.title {
-    font-size: 100px;
-    margin-left: 30%;
+}
+
+img:hover {
+    width:21%;
+}
+
+
+.sloth{
+    margin-left: -250px;
+}
+
+.wombat {
+    position: relative;
+    margin-left: 150px;
+    margin-top: -350px;
+    width: 120%;
+}
+
+.bird{
+    position: relative;
+    margin-left: 550px;
+    margin-top:-260px;
+    width: 120%;
+}
+
+.chameleon{
+    position: relative;
+    margin-left: -250px;
+    margin-top:150px;
+    width: 120%;
+}
+
+.tiger{
+    position: relative;
+    margin-left: 150px;
+    margin-top:-370px;
+    width: 120%;
+}
+
+.giraffe {
+    position: relative;
+    margin-left: 540px;
+    margin-top:-410px;
+    width: 120%;
+}
+
+.ins {
+    color: aqua;
+    margin-left: 540px;
+    margin-top:-650px;
+}
+
+.button {
     position: absolute;
-    color: white;
-    text-align: center;
-    font-family: 'Megrim';
-    text-shadow: 6px 2px gray;
 }
-
-#container{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 
-}
-
-
 

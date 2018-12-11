@@ -2,7 +2,14 @@
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat|Nanum+Pen+Script');
 
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Cabin+Sketch|Elsie|Fredericka+the+Great|Special+Elite');
 
+
+body {
+   background-color:#d6ecfa;
+/*    d6ecfa*/
+}
+/*
 .box1 { 
     width:30px;
     height:250px;
@@ -13,7 +20,9 @@
     z-index: -1;
     transform: rotate(30deg);  
 }
+*/
 
+/*
 .box2 { 
     width:60px;
     height:60px;
@@ -24,6 +33,34 @@
     z-index: -1;
     transform: rotate(20deg);  
 }
+*/
+
+/*
+.background {
+    animation: url("Images/mario.gif");
+*/
+/*    background-size:40%;*/
+/*    width: 50%;*/
+/*
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+*/
+
+/*
+.background1{
+    position: absolute;
+    margin-left: -500px;
+}
+
+.background2{
+   display:block;
+    margin:0 auto;
+}
+*/
+
 
 
 body,html{
@@ -37,10 +74,10 @@ body,html{
 /*    background-color: #ce9999;*/
     font-family: 'Raleway Dots', cursive;
     height:70px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     font-size:35px;
     color: white;
-    text-shadow: 1px 1px 2px #ce9999, 0 0 25px #fab1ce, 0 0 5px #CBA6C3;
+    text-shadow: 1px 1px 2px pink, 0 0 25px purple, 0 0 5px blue;
 }
 
 #title{
@@ -63,13 +100,8 @@ body,html{
   }
 }
 
-#image{
-    margin-left: 25%;
-    margin-bottom: 2%;
-}
-
-#image img{
-    width:67%;
+.background1 {
+    position: absolute;
 }
 
 .content{
@@ -86,6 +118,8 @@ body,html{
     margin-top: -15px;
     text-align: justify;
 }
+
+
 /*
 .footer{
     background-color:#ce9999;
@@ -127,12 +161,12 @@ body,html{
     text-decoration: none;
     font-family:  'Raleway Dots', cursive;
     font-size:25px;
-    color: #CBA6C3;
+    color: skyblue;
 }
 
 .projects ul a:hover{
     color: white;
-    text-shadow: 1px 1px 2px #8EC0E4, 0 0 25px #6AAFE6, 0 0 5px #CBA6C3;
+    text-shadow: 1px 1px 2px pink, 0 0 25px purple, 0 0 5px blue;
 }
 }
 

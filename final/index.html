@@ -1,14 +1,13 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>This place is a zoo!</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js">
     </script>
     
     <div class = "title">
-        <h1>ZOO Per Place</h1>
+        <h1>Animal Invasion!!</h1>
    </div>
    
 </head>
@@ -52,9 +51,10 @@ document.addEventListener("DOMContentLoaded", randomImage);
 </audio>
   
   
-  
+ <div class="button">
  <button onclick="playAudio()" type="button">Play Audio</button>
 <button onclick="pauseAudio()" type="button">Pause Audio</button> 
+</div> 
 
 <script>
 var x = document.getElementById("myAudio1"); 
@@ -99,34 +99,46 @@ function pauseAudio() {
   
 <div class="background"></div>
 
-<div onclick="playAudio1()"  id = "container">
-    <div id="sloth">
+
+<div class="sloth">
+    <div onclick="playAudio1()"  id = "sloth">
     <img src="images/sloth.PNG"alt="SlothImg">
     </div>
+    </div>
     
-<div onclick="playAudio2()" id="wombat">
+<div class="wombat">   
+    <div onclick="playAudio2()" id="wombat">
     <img src="images/wombat.PNG"alt="WombatImg">
     </div>
-    
-<div onclick="playAudio3()" id="bird">
+ </div> 
+ 
+<div class="bird"> 
+    <div onclick="playAudio3()" id="bird">
     <img src="images/bird.PNG"alt="BirdImg">
     </div>
-    
-<div onclick="playAudio4()" id="chameleon">
+</div>  
+   
+ <div class="chameleon">  
+    <div onclick="playAudio4()" id="chameleon">
     <img src="images/chameleon.PNG"alt="ChameleonImg">
-</div>
+    </div>
+</div> 
 
-<div onclick="playAudio5()" id="tiger">
+<div class="tiger">
+    <div onclick="playAudio5()" id="tiger">
     <img src="images/tiger.PNG"alt="TigerImg">
+    </div>
 </div>
 
+<div class="giraffe">
 <div onclick="playAudio6()" id="giraffe">
     <img src="images/giraffe.PNG"alt="GiraffeImg">
+    </div>
 </div>
 
-
-</div>
-    
+<div class="ins">
+    <h2>Drag and Drop!</h2>
+</div>    
 <script>
     
       $( function() {
@@ -153,7 +165,7 @@ function pauseAudio() {
         $( "#giraffe" ).draggable();
     } );
     
-   
+  
 </script>
 
 <body>
